@@ -12,15 +12,19 @@ public class Client {
         ComputerB computer2 = new ComputerB();
         createComputer(computer2);
         System.out.println(computer2);
+
     }
 
-    private static void createComputer(ComputerA computer) {
-        computer.add(new CPUA());
-        computer.add(new MemoryA());
+    private static void createComputer(Computer computer) {
+        if (computer instanceof ComputerA){
+            computer.add(new CPUA());
+            computer.add(new MemoryA());
+        }else {
+            computer.add(new CPUB());
+            computer.add(new MemoryB());
+        }
+
     }
 
-    private static void createComputer(ComputerB computer) {
-        computer.add(new CPUB());
-        computer.add(new MemoryB());
-    }
+
 }
