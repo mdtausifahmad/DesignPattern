@@ -16,4 +16,6 @@ public abstract class Computer {
     public void add(Memory memory) {
         _memory = memory;
     }
+
+    public abstract String getPartsType();
 }
