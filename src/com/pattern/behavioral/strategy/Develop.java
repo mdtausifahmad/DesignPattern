@@ -1,16 +1,23 @@
 package com.pattern.behavioral.strategy;
 
-public abstract class Develop {
+public class Develop {
+
+    private  Build _build;
+    private  Test _test;
+
+    public Develop(Build build, Test test) {
+        _build = build;
+        _test = test;
+    }
 
     public void code(){
         keyInCode();
-        compileCode();
-        testCode();
+        _build.runBuild();
+        _test.runTest();
     }
 
-    public abstract void compileCode();
+    private void keyInCode() {
+        System.out.println("Code in Java");
+    }
 
-    public abstract void testCode();
-
-    public abstract void keyInCode() ;
 }

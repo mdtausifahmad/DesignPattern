@@ -6,7 +6,8 @@ public class Client {
     }
 
     public static void main(String[] args) {
-        work(new DevelopJavaCode());
-        work(new DevelopCSCode());
+       work(new Develop(new MavenBuild(),new TestWithJunit()));
+
+       work(new Develop(new GradleBuild(),new TestWithJunit()));
     }
 }
