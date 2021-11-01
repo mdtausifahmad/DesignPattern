@@ -1,5 +1,9 @@
 package com.pattern.creational.factorymethod;
 
+import com.pattern.creational.factorymethod.employee.Developer;
+import com.pattern.creational.factorymethod.employee.Employee;
+import com.pattern.creational.factorymethod.employee.SalesExecutive;
+
 public class Client {
 
     public static void prepareEmployeeForTravel(Employee employee){

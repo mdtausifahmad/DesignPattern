@@ -1,4 +1,6 @@
-package com.pattern.creational.factorymethod;
+package com.pattern.creational.factorymethod.employee;
+
+import com.pattern.creational.factorymethod.*;
 
 public class SalesExecutive extends  Employee{
 

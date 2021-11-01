@@ -1,4 +1,8 @@
-package com.pattern.creational.factorymethod;
+package com.pattern.creational.factorymethod.employee;
+
+import com.pattern.creational.factorymethod.CarRental;
+import com.pattern.creational.factorymethod.FlightBooking;
+import com.pattern.creational.factorymethod.HotelReservation;
 
 public abstract class Employee {
     private HotelReservation _hotel;
